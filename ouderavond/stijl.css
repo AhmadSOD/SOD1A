@@ -1,0 +1,369 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  background-image: url(/fotos/foto1.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.logo{
+  text-decoration: none;
+  color: #fff;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 30px;
+  cursor: default;
+}
+.logo h1{
+  color: #ffffff;
+}
+
+.logo span {
+  color: #4700ee;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fffdc9;
+  z-index: 1000;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f9cb55; 
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #0c1522;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+li a:hover:not(.active) {
+  background-color: #0c1522; 
+}
+li a:hover{
+  transform: scale(1.1);
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #B8860B;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.formulier {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 80px;
+}
+
+input[type="text"],
+select {
+  width: calc(100% - 24px);
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+.ahmad,
+.bsa,
+.canvas,
+.begeleiding,
+.locatie,
+.opleiding,
+.softwere,
+.eduarte {
+  background-color: #0c1522; 
+  color: #f9cb55; 
+}
+
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+}
+.kool{
+    text-align: center;
+    color: aliceblue;
+    font-size: 240%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font: bold;
+    background-color: none;
+    padding: 1em;
+   border: 4px solid #B8860B;
+   width: 25em;
+   overflow: hidden;
+   border-radius: 23px;
+   margin: 11px;
+   transition: 0.7s ease;
+}
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #ffffff;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+section p {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #ffffff;
+  padding: 1em;
+  border: 4px solid #B8860B;
+  width: 40em;
+  overflow: hidden;
+  border-radius: 23px;
+  margin: 11px;
+  transition: 0.7s ease;
+  
+}
+
+section P:hover{
+  transform: scale(1.1);
+}
+
+a,
+button {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+button:hover {
+  color: #f9cb55;
+}
+
+footer {
+  display: flex;
+  background-color: #0c1522;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+footer p {
+  color: #ffffff;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2em; 
+  }
+
+  main {
+    max-width: 600px; }
+
+  section h2 {
+    font-size: 1.8em; 
+  }
+
+  section p {
+    font-size: 1em; 
+  }
+}
+
+
+
+@media screen and (max-width: 680px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  main {
+    max-width: 100%; 
+    padding: 10px;
+  }
+
+  section h2 {
+    font-size: 1.5em;
+  }
+
+  section p {
+    font-size: 0.9em; 
+  }
+
+  footer p {
+    font-size: 0.8em; 
+}
+}
+
+.LOCATIE-info {
+  padding: 1em;
+  background-color: #000000;
+  border: 4px solid #B8860B;
+  min-height: 11em;
+  width: 25em;
+  overflow: hidden;
+  border-radius: 23px;
+  margin: 11px;
+  transition: 0.7s ease;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.LOCATIE-imge img {
+  width: 100%;
+}
+.info {
+  text-align: center;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.meer-informatie {
+  text-decoration: none;
+  color: #2e1155;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+
+
+.box img{
+  width: 65%;
+  border-radius: 8px;
+
+}
+.box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box div {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #ffffff;
+  padding: 1em;
+  border: 4px solid #B8860B;
+  width: 40em;
+  overflow: hidden;
+  border-radius: 23px;
+  margin: 11px;
+  transition: 0.7s ease;
+}
+
+.box div:hover {
+  transform: scale(1.05);
+}
+
+
+.box div h2 {
+  color: #B8860B;
+}
+
+
+.box div p {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
