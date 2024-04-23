@@ -1,0 +1,347 @@
+/* Stel de algemene opmaak in voor de body */
+body {
+  background-color: #000000;
+  font-family: "Itim", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 32px;
+}
+
+/* Stijl de paragrafen en koppen */
+p, h2 {
+  color: #ffffff;
+}
+
+/* Stijl voor de header */
+header {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Grid container voor de hoofdlay-out */
+.box {
+  width: 100%;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 150px);
+  gap: 25px;
+  grid-template-areas: "info info profiel profiel profiel hobby hobby hobby" "info info profiel profiel profiel opleiding opleiding opleiding" "info info werk werk werk werk referenties referenties" "info info werk werk werk werk talen talen";
+}
+
+/* Stijl voor het informatiegedeelte */
+.info {
+  grid-area: info;
+  background-color: #041d2d;
+  background-image: linear-gradient(to bottom, #041d2d, #235271);
+  line-height: 35px;
+  border-radius: 90px 30px 90px 30px;
+  padding: 30px;
+  overflow-wrap: break-word;
+  transition: 0.7s ease;
+}
+
+/* Hover effect voor info */
+.info:hover {
+  box-shadow: 0 0 12px #1073b5;
+  transform: scale(1.1);
+}
+
+/* Stijl voor koppen en alinea's binnen info */
+.info h2, .info p {
+  text-align: center;
+  font-size: 21px;
+}
+
+/* Stijl voor afbeeldingen binnen info */
+.info img {
+  align-items: center;
+  width: 100%;
+}
+
+/* Stijl voor het profielgedeelte */
+.profiel {
+  grid-area: profiel;
+  background-color: #121212;
+  border-radius: 45px;
+  padding-left: 10px;
+  line-height: 19px;
+  overflow: auto;
+  background-image: linear-gradient(to top, #121212, #235271);
+  transition: 0.7s ease;
+}
+
+/* Hover effect voor profiel */
+.profiel:hover {
+  box-shadow: 0 0 12px #1073b5;
+  transform: scale(1.1);
+}
+
+/* Stijl voor koppen en alinea's binnen profiel */
+.profiel h2, .profiel p {
+  max-width: 220px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Stijl voor afbeeldingen binnen profiel */
+.profiel img {
+  height: 100%;
+  float: right;
+  max-width: 55%;
+  min-width: 55%;
+}
+
+/* ... (vervolg van de CSS met opmerkingen) */
+/* Stijl voor het werkgedeelte */
+.werk {
+  grid-area: werk;
+  background-color: #235271;
+  border-radius: 45px;
+  line-height: 14.8px;
+  background-image: linear-gradient(to bottom, #121212, #235271);
+  transition: 0.7s ease;
+}
+
+/* Hover effect voor werk */
+.werk:hover {
+  box-shadow: 0 0 12px #1073b5;
+  transform: scale(1.1);
+}
+
+/* Stijl voor koppen en alinea's binnen werk */
+.werk h2, .werk p {
+  text-align: center;
+  font-size: 14.2px;
+}
+
+/* Stijl voor afbeeldingen binnen werk */
+.werk img {
+  height: 100%;
+  max-width: 60%;
+  min-width: 60%;
+  float: left;
+  border-radius: 45px 0 0 45px;
+}
+
+/* Stijl voor het hobbygedeelte */
+.hobby {
+  grid-area: hobby;
+  background-color: #121212;
+  border-radius: 45px;
+  background-image: linear-gradient(to bottom, #121212, #235271);
+  transition: 0.7s ease;
+}
+
+/* Hover effect voor hobby */
+.hobby:hover {
+  box-shadow: 0 0 12px #1073b5;
+  transform: scale(1.1);
+}
+
+/* Stijl voor koppen en alinea's binnen hobby */
+.hobby h2, .hobby p {
+  text-align: center;
+  font-size: 15.5px;
+  margin-top: 10px;
+}
+
+/* Stijl voor afbeeldingen binnen hobby */
+.hobby img {
+  height: 100%;
+  max-width: 60%;
+  min-width: 60%;
+  float: right;
+  border-radius: 0 45px 45px 0;
+}
+
+/* Stijl voor het opleidingsgedeelte */
+.opleiding {
+  grid-area: opleiding;
+  background-color: #235271;
+  line-height: 16px;
+  border-radius: 45px;
+  background-image: linear-gradient(to top, #121212, #235271);
+  transition: 0.7s ease;
+}
+
+/* Hover effect voor opleiding */
+.opleiding:hover {
+  box-shadow: 0 0 12px #1073b5;
+  transform: scale(1.1);
+}
+
+/* Stijl voor koppen en alinea's binnen opleiding */
+.opleiding h2, .opleiding p {
+  text-align: center;
+  font-size: 14.5px;
+}
+
+/* Stijl voor afbeeldingen binnen opleiding */
+.opleiding img {
+  height: 100%;
+  max-width: 60%;
+  min-width: 60%;
+  float: left;
+  border-radius: 45px 0 0 45px;
+}
+
+/* ... (vervolg van de CSS met opmerkingen) */
+/* Stijl voor het referentiesgedeelte */
+.referenties {
+  grid-area: referenties;
+  background-color: #121212;
+  line-height: 16px;
+  border-radius: 45px;
+  background-image: linear-gradient(to bottom, #121212, #235271);
+  transition: 0.7s ease;
+}
+
+/* Hover effect voor referenties */
+.referenties:hover {
+  box-shadow: 0 0 12px #1073b5;
+  transform: scale(1.1);
+}
+
+/* Stijl voor koppen en alinea's binnen referenties */
+.referenties h2, .referenties p {
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Stijl voor afbeeldingen binnen referenties */
+.referenties img {
+  height: 100%;
+  float: right;
+  max-width: 50%;
+  border-radius: 0 45px 45px 0;
+}
+
+/* Stijl voor het talengedeelte */
+.talen {
+  grid-area: talen;
+  background-color: #235271;
+  border-radius: 45px;
+  background-image: linear-gradient(to top, #121212, #235271);
+  transition: 0.7s ease;
+}
+
+/* Hover effect voor talen */
+.talen:hover {
+  box-shadow: 0 0 12px #1073b5;
+  transform: scale(1.1);
+}
+
+/* Stijl voor koppen en alinea's binnen talen */
+.talen h2, .talen p {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+/* Stijl voor afbeeldingen binnen talen */
+.talen img {
+  height: 100%;
+  float: left;
+  max-width: 60%;
+  border-radius: 45px 0 0 45px;
+}
+
+/* Stijl voor de footer */
+footer {
+  text-align: center;
+  transition: 0.7s ease;
+  margin: 0 auto;
+}
+
+/* Stijl voor de afbeeldingen in de footer */
+.footer-img {
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.7s ease;
+}
+
+/* Hover effect voor de afbeeldingen in de footer */
+.footer-img:hover {
+  box-shadow: 0 0 12px #ffffff;
+  transform: scale(1.1);
+}
+
+/* Stijl voor hyperlinks */
+a {
+  text-decoration: none;
+}
+
+/* Stijl voor de horizontale lijn in de footer */
+footer hr {
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* Media query voor schermen met een maximale breedte van 1030px */
+@media (max-width: 1030px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 50%;
+  }
+  /* Stijlaanpassingen voor afbeeldingen binnen verschillende secties */
+  .profiel img,
+  .werk img,
+  .hobby img,
+  .opleiding img,
+  .referenties img,
+  .talen img {
+    float: none;
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 45px;
+  }
+  /* Stijlaanpassingen voor secties */
+  .info,
+  .profiel,
+  .werk,
+  .hobby,
+  .opleiding,
+  .referenties,
+  .talen {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    background-attachment: fixed;
+  }
+  /* Stijlaanpassingen voor koppen en alinea's binnen secties */
+  .info h2,
+  .info p,
+  .profiel h2,
+  .profiel p,
+  .werk h2,
+  .werk p,
+  .hobby h2,
+  .hobby p,
+  .opleiding h2,
+  .opleiding p,
+  .referenties h2,
+  .referenties p,
+  .talen h2,
+  .talen p {
+    max-width: 100%;
+    font-size: 23px;
+    margin: 0 auto;
+    line-height: 29px;
+    overflow-wrap: break-word;
+  }
+}/*# sourceMappingURL=style.css.map */
